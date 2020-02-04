@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <Fragment>
+      <Header></Header>
+      <div className="App" style={{display: 'flex', justifyContent: 'center'}}>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://instagram.com/charliesay:"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          instagram
         </a>
-      </header>
-    </div>
+      </div>
+      <Footer></Footer>
+    </Fragment>
   );
-}
+};
 
 export default App;
