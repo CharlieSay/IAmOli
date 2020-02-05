@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 
 const Main = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Main";
-import "./App.css";
-import Main from "./Main";
+import "./pages/Main";
+import "./scss/app.scss";
+import Main from "./pages/Main";
 
 const App = () => {
   return (
