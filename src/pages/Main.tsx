@@ -1,26 +1,25 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
 
 const Main = () => {
   return (
-    <Fragment>
+    <Router>
+      <div>
         <Header />
-        <div
-          className="App"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          <a
-            className="App-link"
-            href="https://instagram.com/charliesay:"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            instagram
-          </a>
-        </div>
+        <hr />
+        <Switch>
+          <Route exact path="/" component={Page1} />
+        </Switch>
+        <Switch>
+          <Route path="/page2" component={Page2} />
+        </Switch>
         <Footer />
-    </Fragment>
+      </div>
+    </Router>
   );
 };
 
