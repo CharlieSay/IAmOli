@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.o-page-align {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 80em) {
+  .o-page-align {
+      padding:0
+  }
+}
+
+.o-page-spacer {
+  margin-top: 32px
+}
+
+@media (min-width: 48em) {
+  .o-page-spacer {
+      margin-top:64px
+  }
+}
