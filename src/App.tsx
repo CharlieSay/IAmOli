@@ -1,6 +1,6 @@
 import React from "react";
-import "./pages/Main";
 import "./scss/app.scss";
+import "./pages/Main";
 import Main from "./pages/Main";
 
 const App = () => {

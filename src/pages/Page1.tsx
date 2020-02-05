@@ -11,11 +11,11 @@ const Page1 = () => {
         <div>
           <a
             className="App-link"
-            href="https://instagram.com/charliesay:"
+            href="https://instagram.com/charliesay"
             target="_blank"
             rel="noopener noreferrer"
           >
-            instagram
+            INSTAGRAM
           </a>
         </div>
       </div>

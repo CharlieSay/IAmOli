@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Gotham';
 }
 
 .App-logo {
@@ -60,4 +61,9 @@
   .o-page-spacer {
       margin-top:64px
   }
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../gotham_black_regular.ttf')
 }

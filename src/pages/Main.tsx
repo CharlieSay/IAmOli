@@ -10,7 +10,6 @@ const Main = () => {
     <Router>
       <div>
         <Header />
-        <hr />
         <Switch>
           <Route exact path="/" component={Page1} />
         </Switch>
