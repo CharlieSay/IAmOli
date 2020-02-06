@@ -10,12 +10,14 @@ const Main = () => {
     <Router>
       <div>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Page1} />
-        </Switch>
-        <Switch>
-          <Route path="/page2" component={Page2} />
-        </Switch>
+        <div className="o-page-align">
+          <Switch>
+            <Route exact path="/" component={Page1} />
+          </Switch>
+          <Switch>
+            <Route path="/page2" component={Page2} />
+          </Switch>
+        </div>
         <Footer />
       </div>
     </Router>
