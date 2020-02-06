@@ -1,8 +1,8 @@
 .header_parent{
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #f8f8f8;
     max-width: 1920px;
     height: 70px;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
 }

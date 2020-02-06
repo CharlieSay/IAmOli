@@ -1,17 +1,11 @@
-.App {
+.app {
   text-align: center;
   font-family: 'Gotham';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-medium {
+  text-align: center;
+  font-family: 'Gotham-Medium';
 }
 
 .App-header {
@@ -65,5 +59,10 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../gotham_black_regular.ttf')
+  src: url('../assets/gotham_black_regular.ttf')
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../assets/gotham_medium.ttf')
 }
