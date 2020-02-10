@@ -2,11 +2,23 @@
     background-color: #f8f8f8;
     max-width: 100%;
     flex-wrap: nowrap;
+    padding-bottom: 1.8%;
     justify-content: space-around; 
 }
 
 .child-container {
     width: 20%;
     padding-top: 1.5%;
-    justify-content: baseline;
+    justify-content: baszline;
+}
+
+.logo-container {
+    padding-top: 1.5%;
+    align-content: center;
+}
+
+.logo-child{
+    font-size: calc(10px + 2vmin);
+    width: 100%;
+    align-items: center;
 }

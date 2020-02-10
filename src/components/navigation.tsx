@@ -1,12 +1,12 @@
 import React from "react";
-import './navigation.scss'
+import "./navigation.scss";
 
 export const Navigation = () => {
-    return (
-        <div className="navigation app-medium">
-          <span> STORE </span>
-          <span> ABOUT </span>
-          <span> PORTFOLIO </span>
-        </div>
-    )
-}
+  return (
+    <div className="navigation app-medium">
+      <a href="/page2">STORE</a>
+      <a href="/about">ABOUT</a>
+      <a href="/portfolio">PORTFOLIO</a>
+    </div>
+  );
+};

@@ -10,7 +10,11 @@ export const Header = () => {
         <div className="child-container">
           <Navigation />
         </div>
-        <h1 style={{ alignContent: "center" }}> I AM OLI </h1>
+        <div className="logo-container">
+          <a href="/" className="logo-child">
+            I AM OLI  
+          </a>
+        </div>
         <div className="child-container">
           <SocialHeader />
         </div>
