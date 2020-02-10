@@ -5,10 +5,10 @@ import './social.scss'
 export const SocialHeader = () => {
     return (
         <div className="social app-medium">
-          <span> F </span>
-          <span> L </span>
-          <span> I </span>
-          <span> T </span>
+          <a href="//www.twitter.com"> T </a>
+          <a href="//www.facebook.com"> F </a>
+          <a href="//www.instagram.com"> I </a>
+          <a href="//www.vimeo.com"> V </a>
         </div>
     )
 }

@@ -1,24 +1,3 @@
 .navigation{
     width:100%
 }
-
-span{
-    padding-left: 5%;
-    float: left;
-}
-a{
-    padding-left: 5%;
-    float: left;
-    color: inherit;
-    text-decoration: inherit;
-}
-
-a:hover{
-    color: red;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    /* ...and now for the proper property */
-    transition:.2s;
-}
