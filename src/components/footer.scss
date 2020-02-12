@@ -1,10 +1,23 @@
-.parent {
+@import '../scss/global_variables.scss';
+
+.footer-parent {
+    padding-top: 4*($grid-base-unit);
     display: flex;
-    height: 300px; /* Or whatever */
-  }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 80%;
+}
 
   .child {
-    width: 100px;  /* Or whatever */
-    height: 100px; /* Or whatever */
-    margin: auto;  /* Magic! */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    
+    &__mobile {
+      padding-top: 38*($grid-base-unit);
+      font-size: calc(5px + 1vmin);
+      white-space: nowrap;
+    }
   }

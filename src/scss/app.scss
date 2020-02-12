@@ -193,17 +193,3 @@ a:hover{
     padding-left: $grid-base-unit * 1.5;
   }
 }
-
-
-/* Mobile first - up to 768px wide */
-body   { padding: $grid-base-unit 0; }
-
-/* Tablet targetted size */
-@media screen and (min-width:768px) and (max-width:1024px) {
-  body   { padding: $grid-base-unit 2; }
-}
-
-/* Desktop size */
-@media screen and (min-width:1025px) {
-  body   { padding: $grid-base-unit 2; }
-}

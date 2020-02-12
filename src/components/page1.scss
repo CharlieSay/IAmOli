@@ -1,0 +1,21 @@
+@import '../scss/global_variables.scss';
+
+.heroImage {
+  max-width: 100%;
+}
+
+.heroImage-mobile {
+  width: 250px;
+  align-content: center;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;  
+}
+
+.page-container {
+  display: inline-block;
+}
+
+.section-one {
+    padding-top: 2*($grid-base-unit)
+}
