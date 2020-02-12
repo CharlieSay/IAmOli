@@ -1,17 +1,27 @@
-$grid-base-unit: 8px;
-
 .header_parent{
     background-color: #f8f8f8;
     max-width: 100%;
     flex-wrap: nowrap;
-    padding-bottom: 1.5%;
     justify-content: space-around; 
+    padding-bottom: 1.75%;
 }
 
 .child-container {
     width: 20%;
-    padding-top: 1.5%;
+    padding-top: 1.75%;
     justify-content: baseline;
+}
+
+.mobile-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.mobile-header__nav_container{
+    padding-right: 27.5%;
+    padding-top: 2%;
 }
 
 .logo-container {
@@ -19,8 +29,14 @@ $grid-base-unit: 8px;
     align-content: center;
 }
 
-.logo-child{
-    font-size: calc(10px + 2vmin);
+.logo-child-desktop{
+    font-size: calc(10px + 3vmin);
     width: 100%;
     align-items: center;
+}
+
+.logo-child-mobile{
+    padding-top: 15%;
+    font-size: calc(10px + 2vmin);
+    white-space: nowrap;
 }
