@@ -1,7 +1,7 @@
 import React from "react";
 import "./scss/app.scss";
-import "./pages/Main";
-import Main from "./pages/Main";
+import "./main";
+import Main from "./main"
 
 const App = () => {
   return (

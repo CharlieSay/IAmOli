@@ -3,10 +3,12 @@ import "./navigation.scss";
 
 export const Navigation = () => {
   return (
-    <div className="navigation app-medium">
-      <a href="/page2">STORE</a>
-      <a href="/about">ABOUT</a>
-      <a href="/portfolio">PORTFOLIO</a>
-    </div>
+    <nav className="nav-wrapper nav-item">
+      <div className="app-medium nav-text-wrapper">
+        <a href="/page2"><span>STORE</span></a>
+        <a href="/about"><span>ABOUT</span></a>
+        <a href="/portfolio"><span>PORTFOLIO</span></a>
+      </div>
+    </nav>
   );
 };

@@ -1,9 +1,32 @@
+@import '../scss/global_variables.scss';
+
 .header_parent{
-    background-color: #f8f8f8;
+    background-color: #f0f0f5;
+    width: 100%;
     max-width: 100%;
-    flex-wrap: nowrap;
+    height: 100px;
+    position: absolute;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     justify-content: space-around; 
-    padding-bottom: 1.75%;
+    top: 0;
+    z-index: 0;
+    margin-bottom: 10%
+}
+
+.header_row {
+  margin: 0 auto;
+  max-width: $site-max-width;
+  padding: $grid-base-unit $grid-base-unit/2;
+  position: relative;
+  height: 33px;
+
+  @media (min-width: 12em) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: $grid-base-unit $grid-base-unit * 1.5;
+  }
 }
 
 .child-container {

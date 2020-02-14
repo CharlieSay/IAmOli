@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import heroImage from "../assets/img/hero.png";
 import { useMediaQuery } from "react-responsive";
 
-import "../components/page1.scss";
+import "../scss/page1.scss";
 
 const Page1 = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
@@ -11,8 +11,8 @@ const Page1 = () => {
   return (
     <Fragment>
       <div
-        className="App  "
-        style={{ display: "nowrap", justifyContent: "center" }}
+     className="o-page-align App"
+        style={{ display: "nowrap", justifyContent: "center"}}
       >
         <div className="page-container o-page-spacer">
           <div>

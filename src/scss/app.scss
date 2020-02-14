@@ -10,31 +10,6 @@
   font-family: 'Gotham-Medium';
 }
 
-.o-page-align {
-  max-width: 1224px;
-  margin: 0 auto;
-  padding: 0 16px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 80em) {
-  .o-page-align {
-      padding:0
-  }
-}
-
-.o-page-spacer {
-  margin-top: 32px
-}
-
-@media (min-width: 48em) {
-  .o-page-spacer {
-      margin-top:64px
-  }
-}
-
 @font-face {
   font-family: 'Gotham';
   src: url('../assets/gotham_black_regular.ttf')
@@ -181,15 +156,20 @@ a:hover{
   }
 }
 
-.x {
-  text-align: left;
-  padding: 0;
-
-  @media (min-width: $bp-to-wide) and (max-width: 78em) {
-    padding: $grid-base-unit 0;
+.o-page-align {
+  max-width: $maxSiteWidth;
+  margin: 0 auto;
+  padding: 0 ($grid-base-unit * 2);
+  position: relative;
+  @media (min-width: $bp-to-wide) {
+      padding: 0;
   }
+}
 
-  @media (min-width: $bp-to-wide) and (max-width: 77.9375em) {
-    padding-left: $grid-base-unit * 1.5;
+.o-page-spacer {
+  margin-top: ($grid-base-unit * 4);
+
+  @media (min-width: $bp-to-wide) {
+      margin-top: ($grid-base-unit * 8);
   }
 }

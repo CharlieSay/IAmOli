@@ -1,11 +1,11 @@
 import React from "react";
 
 const ErrorPage = () => {
-    return (
-        <span className="app-medium" style={{paddingTop: "10%"}}> 
-            WOOPS THIS PAGE DOESNT EXIST YET
-        </span>
-    )
-}
+  return (
+    <div className="o-page-align">
+      <span className="app-medium">WOOPS THIS PAGE DOESNT EXIST YET</span>
+    </div>
+  );
+};
 
 export default ErrorPage;

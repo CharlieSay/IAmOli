@@ -11,10 +11,10 @@ export const Header = () => {
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
   return (
-    <Fragment>
+    <header>
       <div className="header_parent o-page-align">
         {isDesktop && (
-          <Fragment>
+          <div className="header_row">
             <div className="child-container">
               <Navigation />
             </div>
@@ -26,13 +26,13 @@ export const Header = () => {
             <div className="child-container">
               <SocialHeader />
             </div>
-          </Fragment>
+          </div>
         )}
         {isMobile && (
           <Fragment>
             <div className="mobile-header">
               <div className="mobile-header__nav_container">
-                <img src={iconNav} />
+                <img src={iconNav} alt="hamburger_icon"/>
               </div>
               <div className="logo-container">
                 <a href="/">
@@ -43,6 +43,6 @@ export const Header = () => {
           </Fragment>
         )}
       </div>
-    </Fragment>
+    </header>
   );
 };
