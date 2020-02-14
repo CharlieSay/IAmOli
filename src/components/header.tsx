@@ -28,21 +28,19 @@ export const Header = () => {
             </div>
           </div>
         )}
-        {isMobile && (
-          <Fragment>
-            <div className="mobile-header">
-              <div className="mobile-header__nav_container">
-                <img src={iconNav} alt="hamburger_icon"/>
-              </div>
-              <div className="logo-container">
-                <a href="/">
-                  <span className="logo-child-mobile">I AM OLI</span>
-                </a>
-              </div>
-            </div>
-          </Fragment>
-        )}
       </div>
+      {isMobile && (
+        <div className="mobile-header">
+          <div className="hamburger_nav">
+            <img src={iconNav} alt="hamburger_icon" />
+          </div>
+          <div>
+            <a href="/">
+              <span className="logo-child-mobile">I AM OLI</span>
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

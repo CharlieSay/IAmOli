@@ -3,7 +3,7 @@
 .header_parent{
     background-color: #f3f3f4;
     width: 100%;
-    max-width: 100%;
+    max-width: 1920px;
     height: 100px;
     position: absolute;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -35,15 +35,13 @@
 }
 
 .mobile-header {
-    display: flex;
-    flex-wrap: nowrap;
-    align-self: flex-start;
-    width: 100%;
-}
-
-.mobile-header__nav_container{
-    padding-right: 27.5%;
-    padding-top: 2%;
+    background-color: #f3f3f4;
+    position: absolute;
+    display: inline-flex;
+    top: 0;
+    padding: 10%;
+    z-index: 1;
+    margin-bottom: 10%
 }
 
 .logo-container {
@@ -60,9 +58,14 @@
     width: 100%;
     align-items: center;
 }
-
 .logo-child-mobile{
-    padding-top: 15%;
     font-size: calc(10px + 3vmin);
+    padding-top: 10%;
+    width: 100%;
     white-space: nowrap;
+}
+
+.hamburger_nav{
+    padding-left: 10px;
+    padding-right: 35%;
 }

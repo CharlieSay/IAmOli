@@ -7,8 +7,7 @@ export const Footer = () => {
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
   return (
-    <footer className="footer__nav">
-      <div className="app-medium  ">
+    <footer className="footer__nav app-medium">
         {isDesktop && (
           <div className="footer-parent">
             <div className="child">
@@ -33,7 +32,6 @@ export const Footer = () => {
             <span>COPYRIGHT © IAMOLI</span>
           </div>
         )}
-      </div>
     </footer>
   );
 };

@@ -14,9 +14,11 @@
     margin: auto;
     
     &__mobile {
-      padding-top: 38*($grid-base-unit);
+      padding: 3*($grid-base-unit);
       font-size: calc(5px + 1vmin);
       white-space: nowrap;
+      display: flex;
+      justify-content: center;
     }
   }
 
