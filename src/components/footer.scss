@@ -1,11 +1,9 @@
 @import '../scss/global_variables.scss';
 
 .footer-parent {
-    padding-top: 4*($grid-base-unit);
+    padding: 2*($grid-base-unit);
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    max-width: 80%;
+    justify-content: space-evenly;
 }
 
   .child {
@@ -19,5 +17,25 @@
       padding-top: 38*($grid-base-unit);
       font-size: calc(5px + 1vmin);
       white-space: nowrap;
+    }
+  }
+
+
+.footer__nav {
+    background-color: #f3f3f4;
+    ul, li {
+      // Header reset styles
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    a {
+      // Header reset styles
+      text-decoration: none;
+    }
+    &:after{
+      content: "";
+      display: table;
+      clear: both;
     }
   }

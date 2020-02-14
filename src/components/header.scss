@@ -1,7 +1,7 @@
 @import '../scss/global_variables.scss';
 
 .header_parent{
-    background-color: #f0f0f5;
+    background-color: #f3f3f4;
     width: 100%;
     max-width: 100%;
     height: 100px;
@@ -31,8 +31,7 @@
 
 .child-container {
     width: 20%;
-    padding-top: 1.75%;
-    justify-content: baseline;
+    padding-top: 1%;
 }
 
 .mobile-header {
@@ -48,12 +47,16 @@
 }
 
 .logo-container {
-    padding-top: 1.5%;
-    align-content: center;
+    padding-top: 1%;
+    padding-right: 2.5%;
+    text-align: left;
+    span{
+        white-space: nowrap;
+    }
 }
 
 .logo-child-desktop{
-    font-size: calc(10px + 3vmin);
+    font-size: calc(10px + 5vmin);
     width: 100%;
     align-items: center;
 }

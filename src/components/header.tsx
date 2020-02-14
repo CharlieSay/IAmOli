@@ -20,7 +20,7 @@ export const Header = () => {
             </div>
             <div className="logo-container">
               <a href="/" className="logo-child-desktop">
-                I AM OLI
+                <span>I AM OLI</span>
               </a>
             </div>
             <div className="child-container">

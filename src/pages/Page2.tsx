@@ -1,12 +1,15 @@
 import React, { Fragment } from "react";
+import '../scss/about-me.scss'
 
 const Page2 = () => {
   return (
     <Fragment>
-        <h1> Page 2 </h1>
-        <h1> Page 2 </h1>
-        <h1> Page 2 </h1>
-        <h1> Page 2 </h1>
+      <div className="about-me-wrapper">
+        <span> Page 2 </span>
+        <span> Page 2 </span>
+        <span> Page 2 </span>
+        <span> Page 2 </span>
+      </div>
     </Fragment>
   );
 };
