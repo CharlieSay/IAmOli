@@ -1,4 +1,4 @@
-@import './global_variables.scss';
+@import './global-variables.scss';
 
 .app {
   text-align: center;
@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../assets/gotham_black_regular.ttf')
+  src: url('../../assets/gotham_black_regular.ttf')
 }
 
 @font-face {
   font-family: 'Gotham-Medium';
-  src: url('../assets/gotham_medium.ttf')
+  src: url('../../assets/gotham_medium.ttf')
 }
 
 a{

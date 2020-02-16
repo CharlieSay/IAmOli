@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navigation } from "./navigation";
 import { SocialHeader } from "./social";
 import iconNav from "../assets/svgs/icon-nav.svg";
 
-import "./header.scss";
+import "../scss/components/header.scss";
 
 export const Header = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });

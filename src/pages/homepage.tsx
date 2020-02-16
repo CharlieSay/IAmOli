@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import heroImage from "../assets/img/hero.png";
 import { useMediaQuery } from "react-responsive";
 
-import "../scss/page1.scss";
+import "../scss/pages/homepage.scss";
 
 const Page1 = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });

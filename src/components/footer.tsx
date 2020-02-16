@@ -1,6 +1,7 @@
 import React from "react";
-import "./footer.scss";
 import { useMediaQuery } from "react-responsive";
+
+import "../scss/components/footer.scss";
 
 export const Footer = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });

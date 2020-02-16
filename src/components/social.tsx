@@ -1,6 +1,6 @@
 import React from "react";
 
-import './social.scss'
+import "../scss/components/social.scss";
 
 export const SocialHeader = () => {
     return (

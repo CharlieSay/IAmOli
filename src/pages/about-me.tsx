@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import '../scss/about-me.scss'
+import '../scss/pages/about-me.scss'
 
 const Page2 = () => {
   return (

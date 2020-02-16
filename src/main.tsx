@@ -1,9 +1,9 @@
 import React from "react";
 import { Route,   Switch } from "react-router-dom";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
-import ErrorPage from "./pages/ErrorPage";
-import {withLayout} from "./components/WithLayout";
+import Page1 from "./pages/homepage";
+import Page2 from "./pages/about-me";
+import ErrorPage from "./pages/error-page";
+import {withLayout} from "./components/with-layout";
 
 const Main = () => {
 

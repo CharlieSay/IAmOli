@@ -1,7 +1,7 @@
 import React, { FC, Fragment } from "react";
 import {Header} from "./header";
 import {Footer} from "./footer";
-import './WithLayout.scss'
+import '../scss/components/with-layout.scss'
 
 export const withLayout = <P extends object>(
   ContentComponent: FC<any>,

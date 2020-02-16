@@ -1,4 +1,4 @@
-@import '../scss/global_variables.scss';
+@import './global-variables.scss';
 
 .footer-parent {
     padding: 2*($grid-base-unit);
@@ -6,7 +6,7 @@
     justify-content: space-evenly;
 }
 
-  .child {
+.child {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -20,7 +20,7 @@
       display: flex;
       justify-content: center;
     }
-  }
+}
 
 
 .footer__nav {
