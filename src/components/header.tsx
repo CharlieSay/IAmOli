@@ -12,20 +12,20 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="header_parent o-page-align">
+      <div className="header__parent app">
         {isDesktop && (
-          <div className="header_row">
-            <div className="child-container">
+          <div className="header__row">
+            <section>
               <Navigation />
-            </div>
-            <div className="logo-container">
-              <a href="/" className="logo-child-desktop">
+            </section>
+            <section>
+              <a href="/">
                 <span>I AM OLI</span>
               </a>
-            </div>
-            <div className="child-container">
+            </section>
+            <section>
               <SocialHeader />
-            </div>
+            </section>
           </div>
         )}
       </div>

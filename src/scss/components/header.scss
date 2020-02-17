@@ -1,56 +1,22 @@
 @import './global-variables.scss';
 
-.header_parent{
+.header__parent{
     background-color: #f3f3f4;
     width: 100%;
-    max-width: 1920px;
     height: 100px;
     position: absolute;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    justify-content: space-around; 
     top: 0;
     z-index: 0;
     margin-bottom: 10%
 }
 
-.header_row {
-  margin: 0 auto;
-  max-width: $site-max-width;
-  padding: $grid-base-unit $grid-base-unit/2;
-  position: relative;
-  height: 33px;
-
-  @media (min-width: 12em) {
-    align-items: center;
+.header__row {
+    padding-top: 30px;
+    margin: 0;
+    max-width: $site-max-width;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: $grid-base-unit $grid-base-unit * 1.5;
-  }
-}
-
-.child-container {
-    width: 20%;
-    padding-top: 1%;
-}
-
-.mobile-header {
-    background-color: #f3f3f4;
-    position: absolute;
-    display: inline-flex;
-    top: 0;
-    padding: 10%;
-    z-index: 1;
-    margin-bottom: 10%
-}
-
-.logo-container {
-    padding-top: 1%;
-    padding-right: 2.5%;
-    text-align: left;
-    span{
-        white-space: nowrap;
-    }
 }
 
 .logo-child-desktop{
