@@ -17,6 +17,10 @@
     padding: 0 0;
     display: flex;
     justify-content: space-around;
+
+    &__mobile {
+        justify-content: center;
+    }
 }
 
 .header__item{
@@ -39,6 +43,17 @@
         span {
             font-size: 30px;
         }
+
+        &__mobile {
+            text-align: end;
+            padding: 3.5%;
+            margin: 3%;
+            font-size: 25px;
+        }
+    }
+
+    &__hamburger__nav{
+        margin: 3%;
     }
     
 }

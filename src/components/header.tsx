@@ -9,6 +9,7 @@ export const Header = () => {
   const isMedDesktopLow = useMediaQuery({ query: "(min-device-width: 460px)" });
   const isMedDesktopHigh = useMediaQuery({ query: "(max-width: 744px)" });
   const isWideDesktop = useMediaQuery({ query: "(min-device-width: 745px)" });
+  const isMediumDesktop = isMedDesktopLow && isMedDesktopHigh;
 
   return (
     <header className="header__parent app">
@@ -38,7 +39,7 @@ export const Header = () => {
           </section>
         </div>
       )} 
-      {(isMedDesktopLow && isMedDesktopHigh) && (
+      {(isMediumDesktop) && (
         <div className="header__row">
           <section>
             <ul className="app-medium header__item header__item__navigation">
@@ -57,15 +58,15 @@ export const Header = () => {
         </div>
       )}
       {isMobile && (
-        <div className="mobile-header">
-          <div className="hamburger_nav">
+        <div className="header__row header__row__mobile">
+          <section className="header__item__hamburger__nav">
             <img src={iconNav} alt="hamburger_icon" />
-          </div>
-          <div>
+          </section>
+          <section>
             <a href="/">
-              <span className="logo-child-mobile">I AM OLI</span>
+              <span className="header__item header__item__name__mobile">I AM OLI</span>
             </a>
-          </div>
+          </section>
         </div>
       )}
     </header>
