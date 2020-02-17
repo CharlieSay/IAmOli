@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from "react";
 import heroImage from "../assets/img/hero.png";
 import { useMediaQuery } from "react-responsive";
@@ -10,30 +11,13 @@ const Page1 = () => {
 
   return (
     <Fragment>
-      <div
-     className="o-page-align App"
-        style={{ display: "nowrap", justifyContent: "center"}}
-      >
-        <div className="page-container o-page-spacer">
-          <div>
+        <div className="o-page-spacer">
             <a href="https://www.youtube.com/watch?v=t6S0U0dxcBY">
               {isDesktop && (
-                <img
-                  className="heroImage"
-                  style={{ flex: "nowrap" }}
-                  src={heroImage}
-                />
-              )}
-              {isMobile && (
-                 <img
-                 className="heroImage-mobile"
-                 style={{ flex: "nowrap" }}
-                 src={heroImage}
-               />
+               <span>Click Me To See A Showreel </span>
               )}
             </a>
           </div>
-          <div className="o-page-align section-one">
             <a
               href="https://instagram.com/charliesay"
               target="_blank"
@@ -41,9 +25,6 @@ const Page1 = () => {
             >
               INSTAGRAM
             </a>
-          </div>
-        </div>
-      </div>
     </Fragment>
   );
 };

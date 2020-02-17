@@ -8,31 +8,34 @@ export const Footer = () => {
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
   return (
-    <footer className="footer__nav app-medium">
-        {isDesktop && (
-          <div className="footer-parent">
-            <div className="child">
-              <span>COPYRIGHT © IAMOLI</span>
-            </div>
-            <div className="child">
-              <a href="mailto:oli@">
-                {" "}
-                <span>CONTACT ME</span>{" "}
-              </a>
-            </div>
-            <div className="child">
-              <a href="//www.instagram.com/charliesay">
-                {" "}
-                <span>WEBSITE BY CHARLIE SAY</span>{" "}
-              </a>
-            </div>
+    <footer className="footer__parent app-medium">
+      {isDesktop && (
+        <div className="footer__nav">
+          <div className="footer__lists">
+            <section>
+              <ul>
+                <li>COPYRIGHT © IAMOLI</li>
+              </ul>
+            </section>
+            <section>
+              <ul>
+                <li>
+                  <a href="mailto:oli@iamoli.com">CONTACT ME</a>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <ul>
+                <li>
+                  <a href="//www.instagram.com/charliesay">
+                    WEBSITE BY CHARLIE SAY
+                  </a>
+                </li>
+              </ul>
+            </section>
           </div>
-        )}
-        {isMobile && (
-          <div className="child__mobile">
-            <span>COPYRIGHT © IAMOLI</span>
-          </div>
-        )}
+        </div>
+      )}
     </footer>
   );
 };

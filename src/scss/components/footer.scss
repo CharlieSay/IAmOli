@@ -1,43 +1,46 @@
 @import './global-variables.scss';
 
-.footer-parent {
-    padding: 2*($grid-base-unit);
-    display: flex;
-    justify-content: space-evenly;
+.footer__parent {
+    max-width: 100%;
+    display: block;
+    padding: $grid-base-unit 0 ($grid-base-unit / 2) 0;
 }
 
-.child {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    max-width: 80%;
-    margin: auto;
-    
-    &__mobile {
-      padding: 3*($grid-base-unit);
-      font-size: calc(5px + 1vmin);
-      white-space: nowrap;
-      display: flex;
-      justify-content: center;
-    }
+$maxSiteWidth: 1224px;
+
+
+.footer__spacer {
+    margin-top: 100px;
+    padding-top: 100px;
 }
 
+.footer__lists {
+  padding: 40px 0;
+  overflow: hidden;
+  margin: auto;
+  max-width: 1224px;
+}
 
 .footer__nav {
+  margin: 0 0 ($grid-base-unit / 2) 0;
+  padding-bottom: ($grid-base-unit / 2);
     background-color: #f3f3f4;
+    display:inline-block;
+    width:100%;
     ul, li {
       // Header reset styles
       padding: 0;
       margin: 0;
       list-style-type: none;
     }
-    a {
-      // Header reset styles
-      text-decoration: none;
-    }
     &:after{
       content: "";
       display: table;
       clear: both;
+    }
+    span{
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
