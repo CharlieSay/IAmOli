@@ -1,7 +1,5 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Navigation } from "./navigation";
-import { SocialHeader } from "./social";
 import iconNav from "../assets/svgs/icon-nav.svg";
 
 import "../scss/components/header.scss";
