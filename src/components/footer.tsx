@@ -19,18 +19,16 @@ export const Footer = () => {
             </section>
             <section>
               <ul>
-                <li>
-                  <a href="mailto:oli@iamoli.com">CONTACT ME</a>
-                </li>
+                <a href="mailto:oli@iamoli.com">
+                  <li>CONTACT ME</li>
+                </a>
               </ul>
             </section>
             <section>
               <ul>
-                <li>
-                  <a href="//www.instagram.com/charliesay">
-                    WEBSITE BY CHARLIE SAY
-                  </a>
-                </li>
+                <a href="//www.instagram.com/charliesay">
+                  <li>WEBSITE BY CHARLIE SAY</li>
+                </a>
               </ul>
             </section>
           </div>

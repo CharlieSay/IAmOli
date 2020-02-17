@@ -1,13 +1,11 @@
 @import './global-variables.scss';
+$maxSiteWidth: 1224px;
 
 .footer__parent {
     max-width: 100%;
     display: block;
     padding: $grid-base-unit 0 ($grid-base-unit / 2) 0;
 }
-
-$maxSiteWidth: 1224px;
-
 
 .footer__spacer {
     margin-top: 100px;
@@ -18,12 +16,13 @@ $maxSiteWidth: 1224px;
   padding: 40px 0;
   overflow: hidden;
   margin: auto;
-  max-width: 1224px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__nav {
-  margin: 0 0 ($grid-base-unit / 2) 0;
-  padding-bottom: ($grid-base-unit / 2);
+    margin: ($grid-base-unit / 2) ($grid-base-unit / 2) 0 0;
     background-color: #f3f3f4;
     display:inline-block;
     width:100%;
@@ -43,4 +42,4 @@ $maxSiteWidth: 1224px;
       overflow: hidden;
       white-space: nowrap;
     }
-  }
+}
