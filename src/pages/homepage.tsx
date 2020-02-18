@@ -11,20 +11,20 @@ const Page1 = () => {
 
   return (
     <Fragment>
-        <div className="o-page-spacer">
+        <div className="o-page-align">
             <a href="https://www.youtube.com/watch?v=t6S0U0dxcBY">
               {isDesktop && (
                <span>Click Me To See A Showreel </span>
               )}
             </a>
-          </div>
             <a
               href="https://instagram.com/charliesay"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              >
               INSTAGRAM
             </a>
+              </div>
     </Fragment>
   );
 };

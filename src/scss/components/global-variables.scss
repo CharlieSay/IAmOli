@@ -2,20 +2,11 @@
     @return ($value/16) * 1em;
 }
 
-$grid-base-unit: 8px;
-$site-max-width: pxtoem(1920);
+$foundation-unit: 8px;
+$foundation-max-site-width: pxtoem(1920);
 $bp-to-wide: 50em;
 $extra-wide: pxtoem(1280);
 $bp-narrow: pxtoem(0);
 $bp-medium: pxtoem(768);
 $bp-wide: pxtoem(1024);
 $extra-wide: pxtoem(1280);
-
-$maxSiteWidth: (1224/16) * 1em;
-/// @group Mixins
-
-$max-site-width: pxtoem(1224);
-
-$header-nav-spacer-small: 56;
-$header-nav-spacer-medium: 82;
-$header-nav-spacer-large: 124;

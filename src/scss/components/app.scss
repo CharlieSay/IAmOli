@@ -29,19 +29,15 @@ a:hover{
 }
 
 .o-page-align {
-  max-width: $maxSiteWidth;
-  margin: 0 auto;
-  padding: 0 ($grid-base-unit * 2);
-  position: relative;
-  @media (min-width: $bp-to-wide) {
-      padding: 0;
-  }
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .o-page-spacer {
-  margin-top: ($grid-base-unit * 4);
+  margin-top: ($foundation-unit * 4);
 
   @media (min-width: $bp-to-wide) {
-      margin-top: ($grid-base-unit * 8);
+      margin-top: ($foundation-unit * 8);
   }
 }

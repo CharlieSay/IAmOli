@@ -3,7 +3,7 @@
 .footer__parent {
     max-width: 100%;
     display: block;
-    padding: $grid-base-unit 0 ($grid-base-unit / 2) 0;
+    padding: $foundation-unit 0 ($foundation-unit / 2) 0;
 }
 
 .footer__spacer {
@@ -21,7 +21,7 @@
 }
 
 .footer__nav {
-    margin: ($grid-base-unit / 2) ($grid-base-unit / 2) 0 0;
+    margin: ($foundation-unit / 2) ($foundation-unit / 2) 0 0;
     background-color: #f3f3f4;
     display:inline-block;
     width:100%;

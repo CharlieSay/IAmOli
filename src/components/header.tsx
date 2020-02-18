@@ -1,6 +1,11 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+
 import iconNav from "../assets/svgs/icon-nav.svg";
+import twitterIcon from "../assets/svgs/twitter.svg";
+import facebookIcon from "../assets/svgs/facebook.svg";
+import instagramIcon from "../assets/svgs/instagram.svg";
+import youtubeIcon from "../assets/svgs/youtube.svg";
 
 import "../scss/components/header.scss";
 
@@ -31,10 +36,10 @@ export const Header = () => {
           </section>
           <section>
             <ul className="app-medium header__item header__item__socials">
-              <a href="//www.twitter.com"> T </a>
-              <a href="//www.facebook.com"> F </a>
-              <a href="//www.instagram.com"> I </a>
-              <a href="//www.vimeo.com"> V </a>
+              <a href="//www.twitter.com/OliWolstencroft"> <img src={twitterIcon} alt="Twitter Icon"/> </a>
+              <a href="//www.facebook.com"> <img src={facebookIcon} alt="Facebook Icon"/>  </a>
+              <a href="//www.instagram.com/oliwolstencroft"> <img src={instagramIcon} alt="Instagram Icon"/>  </a>
+              <a href="//www.youtube.com/channel/UC15gNBeVDMlmpEksvTQMhrg"> <img src={youtubeIcon} alt="Youtube Icon"/>  </a>
             </ul>
           </section>
         </div>
