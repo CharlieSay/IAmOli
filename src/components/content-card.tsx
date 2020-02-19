@@ -24,8 +24,8 @@ const ContentCard = (props: ContentCardProps) => {
               </div>
             )}
             <div className="content__card__information">
-              <h4>{contentTitle}</h4>
-              <span>{contentDescription}</span>
+              <h3>{contentTitle.toUpperCase()}</h3>
+              <span className="app-medium">{contentDescription?.toLowerCase()}</span>
             </div>
           </div>
         </a>

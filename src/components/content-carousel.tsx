@@ -6,43 +6,43 @@ import "../scss/components/content-carousel.scss"
 const carouselDummyData = [
   {
     imageSrc: "string",
-    imageAltText: "string",
+    imageAltText: "f_g_1",
     imageDescription: "string",
-    contentTitle: "Content Title 1",
-    contentDescription: "description 1",
-    offsiteUrl: "string"
+    contentTitle: "Wonder Loops",
+    contentDescription: "Hillsong United - Wonder",
+    offsiteUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY"
   },
   {
     imageSrc: "string",
-    imageAltText: "string",
+    imageAltText: "f_g_2",
     imageDescription: "string",
-    contentTitle: "Content Title 2",
-    contentDescription: "desc 2",
-    offsiteUrl: "string"
+    contentTitle: "Awake My Soul",
+    contentDescription: "Hillsong - Awake My Soul",
+    offsiteUrl: "https://www.youtube.com/watch?v=TKs2O8l23Cg"
   },
   {
     imageSrc: "string",
-    imageAltText: "string",
+    imageAltText: "f_g_3",
     imageDescription: "string",
-    contentTitle: "Content Title 3",
-    contentDescription: "desc 3",
-    offsiteUrl: "string"
+    contentTitle: "VJ Loops 1",
+    contentDescription: "Start of VJ Loops",
+    offsiteUrl: "https://www.audaciouschurch.com"
   },
   {
     imageSrc: "string",
-    imageAltText: "string",
+    imageAltText: "f_g_4",
     imageDescription: "string",
-    contentTitle: "Content Title 4",
-    contentDescription: "desc 4",
-    offsiteUrl: "string"
+    contentTitle: "VJ Loops 2",
+    contentDescription: "MORE VJ LOOPS",
+    offsiteUrl: "https://www.audaciouschurch.com"
   },
   {
     imageSrc: "string",
-    imageAltText: "string",
+    imageAltText: "f_g_5",
     imageDescription: "string",
-    contentTitle: "Content Title 5",
-    contentDescription: "desc 5",
-    offsiteUrl: "string"
+    contentTitle: "Film Grain 50mm",
+    contentDescription: "Edgy Loopz",
+    offsiteUrl: "https://www.audaciouschurch.com"
   }
 ];
 
