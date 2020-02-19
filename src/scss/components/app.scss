@@ -2,6 +2,9 @@
 
 .app {
   font-family: 'Gotham';
+  &__medium {
+    font-family: 'Gotham-Medium';
+  }
 }
 
 .app-medium {

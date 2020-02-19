@@ -1,5 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import FadeIn from "react-fade-in";
 
 import "../scss/components/footer.scss";
 
@@ -14,20 +15,26 @@ export const Footer = () => {
           <div className="footer__lists">
             <section>
               <ul>
-                <li>COPYRIGHT © IAMOLI</li>
+                <FadeIn>
+                  <li>COPYRIGHT © IAMOLI</li>
+                </FadeIn>
               </ul>
             </section>
             <section>
               <ul>
                 <a href="mailto:oli@iamoli.com">
-                  <li>CONTACT ME</li>
+                  <FadeIn>
+                    <li>CONTACT ME</li>
+                  </FadeIn>
                 </a>
               </ul>
             </section>
             <section>
               <ul>
                 <a href="//www.instagram.com/charliesay">
-                  <li>WEBSITE BY CHARLIE SAY</li>
+                  <FadeIn>
+                    <li>WEBSITE BY CHARLIE SAY</li>
+                  </FadeIn>
                 </a>
               </ul>
             </section>

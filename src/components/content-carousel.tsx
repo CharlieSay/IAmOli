@@ -1,7 +1,7 @@
 import ContentCard from "./content-card";
 import React, { Fragment } from "react";
 
-import "../scss/components/content-carousel.scss"
+import "../scss/components/content-carousel.scss";
 
 const carouselDummyData = [
   {
@@ -51,7 +51,9 @@ const ContentCarousel = () => {
     <Fragment>
       <div className="carousel__container o-page-spacer">
         {carouselDummyData.map((carouselData, i) => (
-          <ContentCard {...carouselData} />
+          <div id={`content-id-${i}`}>
+            <ContentCard {...carouselData} />
+          </div>
         ))}
       </div>
     </Fragment>

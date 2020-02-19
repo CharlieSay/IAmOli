@@ -1,0 +1,28 @@
+.hero__card{
+    position: relative;
+    text-align: center;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__block {
+        width: 400px;
+        height: 115px;
+        background: red;
+    }
+
+    img{
+        flex-grow:1;
+        width: 1225px;
+        height: 320px;
+    }
+
+    span{
+        color: white;
+        font-size: 65px;
+    }
+}
