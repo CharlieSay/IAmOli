@@ -17,7 +17,8 @@ const ContentCard = (props: ContentCardProps) => {
       <div className="content__card">
         <a href={offsiteUrl} target="_blank" rel="noopener noreferrer">
           <div className="content__card__image">
-            {imageSrc && <img src={imageSrc} alt={imageAltText}></img>}
+            {imageSrc && 
+            <img src={imageSrc} alt={imageAltText}></img>}
             {!imageSrc && (
               <div className="content__card__image__desc">
                 <span>{imageDescription}</span>}
@@ -35,7 +36,7 @@ const ContentCard = (props: ContentCardProps) => {
 };
 
 export type ContentCardProps = {
-  imageSrc?: string;
+  imageSrc?: any;
   imageAltText?: string;
   imageDescription?: string;
   contentTitle: string;

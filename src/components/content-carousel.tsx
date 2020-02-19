@@ -1,11 +1,19 @@
 import ContentCard from "./content-card";
+import { useMediaQuery } from "react-responsive";
 import React, { Fragment } from "react";
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
+
+import PackOne from "../assets/img/PACK1.png";
+import PackTwo from "../assets/img/PACK2.png";
+import PackThree from "../assets/img/FILm3.png";
+import PackFour from "../assets/img/PACK4.png";
+import PackFive from "../assets/img/PACK6.png";
 
 import "../scss/components/content-carousel.scss";
 
 const carouselDummyData = [
   {
-    imageSrc: "string",
+    imageSrc: PackOne,
     imageAltText: "f_g_1",
     imageDescription: "string",
     contentTitle: "Wonder Loops",
@@ -13,7 +21,7 @@ const carouselDummyData = [
     offsiteUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY"
   },
   {
-    imageSrc: "string",
+    imageSrc: PackTwo,
     imageAltText: "f_g_2",
     imageDescription: "string",
     contentTitle: "Awake My Soul",
@@ -21,7 +29,7 @@ const carouselDummyData = [
     offsiteUrl: "https://www.youtube.com/watch?v=TKs2O8l23Cg"
   },
   {
-    imageSrc: "string",
+    imageSrc: PackThree,
     imageAltText: "f_g_3",
     imageDescription: "string",
     contentTitle: "VJ Loops 1",
@@ -29,7 +37,7 @@ const carouselDummyData = [
     offsiteUrl: "https://www.audaciouschurch.com"
   },
   {
-    imageSrc: "string",
+    imageSrc: PackFour,
     imageAltText: "f_g_4",
     imageDescription: "string",
     contentTitle: "VJ Loops 2",
@@ -37,7 +45,7 @@ const carouselDummyData = [
     offsiteUrl: "https://www.audaciouschurch.com"
   },
   {
-    imageSrc: "string",
+    imageSrc: PackFive,
     imageAltText: "f_g_5",
     imageDescription: "string",
     contentTitle: "Film Grain 50mm",
@@ -47,14 +55,38 @@ const carouselDummyData = [
 ];
 
 const ContentCarousel = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
+  const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
+
   return (
     <Fragment>
       <div className="carousel__container o-page-spacer">
-        {carouselDummyData.map((carouselData, i) => (
-          <div id={`content-id-${i}`}>
-            <ContentCard {...carouselData} />
+        {isMobile && (
+          <CarouselProvider
+            naturalSlideWidth={200}
+            naturalSlideHeight={300}
+            totalSlides={carouselDummyData.length}
+          >
+            <Slider>
+              {carouselDummyData.map((carouselData, i) => (
+                <div id={`content-id-${i}`}>
+                  <Slide index={(i+1)}>
+                    <ContentCard {...carouselData} />
+                  </Slide>
+                </div>
+              ))}
+            </Slider>
+          </CarouselProvider>
+        )}
+        {isDesktop && (
+          <div className="carousel__container">
+            {carouselDummyData.map((carouselData, i) => (
+              <div id={`content-id-${i}`}>
+                <ContentCard {...carouselData} />
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
     </Fragment>
   );

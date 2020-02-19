@@ -63,13 +63,10 @@ export const Header = () => {
         </div>
       )}
       {isMobile && (
-        <div className="header__row header__row__mobile">
-          <section className="header__item__hamburger__nav">
-            <img src={iconNav} alt="hamburger_icon" />
-          </section>
-          <section>
+        <div className="header__row">
+          <section className="header__row__mobile">
             <a href="/">
-              <span className="header__item header__item__name__mobile">I AM OLI</span>
+              <span className="header__item__name__mobile">I AM OLI</span>
             </a>
           </section>
         </div>
