@@ -1,7 +1,7 @@
 import ContentCard from "./content-card";
 import { useMediaQuery } from "react-responsive";
 import React, { Fragment } from "react";
-import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 
 import PackOne from "../assets/img/PACK1.png";
 import PackTwo from "../assets/img/PACK2.png";
@@ -65,15 +65,15 @@ const ContentCarousel = () => {
           <CarouselProvider
             naturalSlideWidth={200}
             naturalSlideHeight={300}
-            totalSlides={carouselDummyData.length}
+            totalSlides={5}
           >
             <Slider>
               {carouselDummyData.map((carouselData, i) => (
-                <div id={`content-id-${i}`}>
-                  <Slide index={(i+1)}>
+                <Slide index={(i+1)}>
+                  <div id={`content-id-${i}`}>
                     <ContentCard {...carouselData} />
-                  </Slide>
                 </div>
+                  </Slide>
               ))}
             </Slider>
           </CarouselProvider>

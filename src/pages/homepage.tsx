@@ -30,6 +30,7 @@ const Page1 = () => {
               <h4> RECENT CONTENT </h4>
             </section>
           </div>
+          <ContentCarousel />
         </div>
       )}
       {isMobile && (
@@ -37,7 +38,6 @@ const Page1 = () => {
           <h4> RECENT CONTENT </h4>
         </section>
       )}
-      <ContentCarousel />
     </Fragment>
   );
 };
