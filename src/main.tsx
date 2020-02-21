@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <Switch>
       <Route exact path="/" component={HomePageWithLayout} />
-      <Route exact path="/page2" component={AboutMeWithLayout} />
+      <Route exact path="/about" component={AboutMeWithLayout} />
       <Route component={ErrorPageWithLayout} />
     </Switch>
   );

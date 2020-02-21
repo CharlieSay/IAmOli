@@ -1,5 +1,15 @@
-.about-me-wrapper {
-    padding: 10%;
-    display: flex;
+@import '../components/global-variables.scss';
+@import '../components/app.scss';
+
+.about__me{
+    display: flex-block;
     justify-content: center;
+    max-width: $foundation-max-content-width;
+    text-align: center;
+
+    &__profile{
+        border-radius: 60%;
+        filter: drop-shadow(0 0 5px #333);
+    }
+  
 }
