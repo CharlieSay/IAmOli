@@ -5,7 +5,6 @@ import FadeIn from "react-fade-in";
 import "../scss/components/footer.scss";
 
 export const Footer = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
   return (

@@ -36,6 +36,7 @@ const Page1 = () => {
       {isMobile && (
         <section className="app-medium top__spot__text">
           <h4> RECENT CONTENT </h4>
+        <ContentCarousel />
         </section>
       )}
     </Fragment>

@@ -1,7 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
-import iconNav from "../assets/svgs/icon-nav.svg";
 import twitterIcon from "../assets/svgs/twitter.svg";
 import facebookIcon from "../assets/svgs/facebook.svg";
 import instagramIcon from "../assets/svgs/instagram.svg";

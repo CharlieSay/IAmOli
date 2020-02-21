@@ -1,7 +1,6 @@
 import ContentCard from "./content-card";
 import { useMediaQuery } from "react-responsive";
 import React, { Fragment } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 
 import PackOne from "../assets/img/PACK1.png";
 import PackTwo from "../assets/img/PACK2.png";
@@ -62,21 +61,15 @@ const ContentCarousel = () => {
     <Fragment>
       <div className="carousel__container o-page-spacer">
         {isMobile && (
-          <CarouselProvider
-            naturalSlideWidth={200}
-            naturalSlideHeight={300}
-            totalSlides={5}
-          >
-            <Slider>
+          <div className="carousel__results__skeleton">
+            <ul className="carousel__results__list">
               {carouselDummyData.map((carouselData, i) => (
-                <Slide index={(i+1)}>
-                  <div id={`content-id-${i}`}>
+                  <li key={`content-id-${i}`} className="carousel-card">
                     <ContentCard {...carouselData} />
-                </div>
-                  </Slide>
+                  </li>
               ))}
-            </Slider>
-          </CarouselProvider>
+            </ul>
+            </div>
         )}
         {isDesktop && (
           <div className="carousel__container">
