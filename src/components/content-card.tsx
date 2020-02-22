@@ -2,8 +2,15 @@ import React, { Fragment } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import "../scss/components/content-card.scss";
+import { Redirect } from "react-router";
 
-const ContentCard = (props: ContentCardProps) => {
+const ConsoleLogMe = () => {
+   return (
+     <Redirect to={"/about-me"}/>
+   )
+}
+
+const ContentCard = (props: ContentItemProp) => {
   const {
     imageSrc,
     imageAltText,
@@ -36,12 +43,13 @@ const ContentCard = (props: ContentCardProps) => {
             )}
           </div>
         </a>
+        <button onClick={ConsoleLogMe} >See More</button>
       </div>
     </Fragment>
   );
 };
 
-export type ContentCardProps = {
+export type ContentItemProp = {
   imageSrc?: any;
   imageAltText?: string;
   imageDescription?: string;

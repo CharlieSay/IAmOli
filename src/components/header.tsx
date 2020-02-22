@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="header__row">
           <section>
             <ul className="app-medium header__item header__item__navigation">
-              <a href="/page2">STORE</a>
+              <a href="/item">STORE</a>
               <a href="/about">ABOUT</a>
               <a href="/portfolio">PORTFOLIO</a>
             </ul>
