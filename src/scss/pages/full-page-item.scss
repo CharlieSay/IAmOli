@@ -9,6 +9,11 @@
      &__desktop {
          display: inherit;
          max-width: 60%;
+         &__col1{
+            &__image {
+                padding-top: $foundation-unit*2;
+            }
+        }
          &__col2{
              text-align: end;
              span {

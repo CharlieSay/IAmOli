@@ -1,3 +1,8 @@
 .content-padding {
-    padding-top: 100px;
+    &-desktop{
+        padding-top: 100px;
+    }
+     &-mobile{
+        padding-top: 75px;
+    }
 }
