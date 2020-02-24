@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ProfilePicture from "../assets/img/oli_profile.jpg"
 import '../scss/pages/about-me.scss'
 
-const Page2 = () => {
+const AboutMe = () => {
   return (
     <Fragment>
       <div className="about__me">
@@ -15,4 +15,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default AboutMe;

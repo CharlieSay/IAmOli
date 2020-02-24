@@ -1,15 +1,15 @@
 import React from "react";
 import { Route,   Switch } from "react-router-dom";
-import Page1 from "./pages/homepage";
-import Page2 from "./pages/about-me";
+import HomePage from "./pages/homepage";
+import AboutMe from "./pages/about-me";
 import WonderLoopItem from "./pages/wonder-loop";
 import ErrorPage from "./pages/error-page";
 import {withLayout} from "./components/with-layout";
 
 const Main = () => {
 
-  const HomePageWithLayout = withLayout(Page1)
-  const AboutMeWithLayout = withLayout(Page2)
+  const HomePageWithLayout = withLayout(HomePage)
+  const AboutMeWithLayout = withLayout(AboutMe)
   const FullPageItemWithLayout = withLayout(WonderLoopItem)
   const ErrorPageWithLayout = withLayout(ErrorPage)
 

@@ -1,9 +1,9 @@
-@import './global-variables.scss';
+@import "./global-variables.scss";
 
 .app {
-  font-family: 'Gotham';
+  font-family: "Gotham";
   &__medium {
-    font-family: 'Gotham-Medium';
+    font-family: "Gotham-Medium";
   }
 }
 
@@ -24,7 +24,7 @@ button {
   transition: 0.8s;
 }
 
-button:hover{
+button:hover {
   -moz-transform: scale(1.05) rotate(0deg);
   -webkit-transform: scale(1.05) rotate(0deg);
   -o-transform: scale(1.05) rotate(0deg);
@@ -32,33 +32,32 @@ button:hover{
   transform: scale(1.05) rotate(0deg);
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
-  -o-transition: 0  .8s;
+  -o-transition: 0 0.8s;
   -ms-transition: 0.8s;
   transition: 0.8s;
 }
 
-
 .app-medium {
-  font-family: 'Gotham-Medium';
+  font-family: "Gotham-Medium";
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../../assets/gotham_black_regular.ttf')
+  font-family: "Gotham";
+  src: url("../../assets/gotham_black_regular.ttf");
 }
 
 @font-face {
-  font-family: 'Gotham-Medium';
-  src: url('../../assets/gotham_medium.ttf')
+  font-family: "Gotham-Medium";
+  src: url("../../assets/gotham_medium.ttf");
 }
 
-a{
+a {
   text-decoration: inherit;
   color: black;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
-a:hover{
+a:hover {
   color: red;
 }
 
@@ -72,6 +71,6 @@ a:hover{
   margin-top: ($foundation-unit * 4);
 
   @media (min-width: $bp-to-wide) {
-      margin-top: ($foundation-unit * 8);
+    margin-top: ($foundation-unit * 8);
   }
 }

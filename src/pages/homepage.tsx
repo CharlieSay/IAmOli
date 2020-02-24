@@ -6,7 +6,7 @@ import HeroCard from "../components/hero-card";
 
 import "../scss/pages/homepage.scss";
 
-const Page1 = () => {
+const HomePage = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
@@ -43,4 +43,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default HomePage;
