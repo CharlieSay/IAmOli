@@ -6,13 +6,13 @@ import "../scss/pages/full-page-item.scss";
 import "react-dropdown/style.css";
 
 type FullPageItemProps = {
-  pageTitle: string;
+  pageTitle?: string;
   imageSrc?: any;
   imageAltText?: string;
   contentTitle?: string;
   contentDescription?: string;
   contentPreviewUrl?: string;
-  itemQualityLevels: QualityLevelWithPrice[];
+  itemQualityLevels?: QualityLevelWithPrice[];
 };
 
 const HandleDropDownSelection = (selection: Option) => {
@@ -42,7 +42,7 @@ const FullPageItem = (props: FullPageItemProps) => {
       label: `${itemPriceQuality.qualityLevel} : £${itemPriceQuality.price}`
     })
   );
-
+  
   return (
     <div className="full__page">
       {isDesktop && (
