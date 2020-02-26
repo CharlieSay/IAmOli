@@ -1,19 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Dropdown, { Option } from "react-dropdown";
-import { QualityLevelWithPrice } from "../constants/quality-level";
+import { FullPageItemProps } from "../constants/full-page-item-prop-type";
 import "../scss/pages/full-page-item.scss";
 import "react-dropdown/style.css";
-
-type FullPageItemProps = {
-  pageTitle?: string;
-  imageSrc?: any;
-  imageAltText?: string;
-  contentTitle?: string;
-  contentDescription?: string;
-  contentPreviewUrl?: string;
-  itemQualityLevels?: QualityLevelWithPrice[];
-};
 
 const HandleDropDownSelection = (selection: Option) => {
   console.log(selection.label);
@@ -25,6 +15,7 @@ const FullPageItem = (props: FullPageItemProps) => {
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
   const {
+    id,
     pageTitle,
     imageSrc,
     imageAltText,
@@ -34,14 +25,16 @@ const FullPageItem = (props: FullPageItemProps) => {
     itemQualityLevels = []
   } = props;
 
-  const itemQualityArray: Option[] = [];
+  // const itemQualityArray: Option[] = [];
 
-  itemQualityLevels.map((itemPriceQuality, i) =>
-    itemQualityArray.push({
-      value: `${i}-${itemPriceQuality.qualityLevel}`,
-      label: `${itemPriceQuality.qualityLevel} : £${itemPriceQuality.price}`
-    })
-  );
+  // itemQualityLevels.map((itemPriceQuality, i) =>
+  //   itemQualityArray.push({
+  //     value: `${i}-${itemPriceQuality.qualityLevel}`,
+  //     label: `${itemPriceQuality.qualityLevel} : £${itemPriceQuality.price}`
+  //   })
+  // );
+
+  console.log(props)
   
   return (
     <div className="full__page">
@@ -59,11 +52,11 @@ const FullPageItem = (props: FullPageItemProps) => {
             <h1>{contentTitle?.toUpperCase()}</h1>
             <span>{contentDescription?.toLowerCase()}</span>
             <ul className="full__page__desktop__col2__price__container">
-              <Dropdown
+              {/* <Dropdown
                 options={itemQualityArray}
                 onChange={HandleDropDownSelection}
                 placeholder="Content Prices"
-              />
+              /> */}
             </ul>
           </div>
         </div>
@@ -80,11 +73,11 @@ const FullPageItem = (props: FullPageItemProps) => {
             {contentDescription?.toLowerCase()}
           </span>
           <div className="o-page-spacer">
-            <Dropdown
+            {/* <Dropdown
               options={itemQualityArray}
               onChange={HandleDropDownSelection}
               placeholder="Content Prices"
-            />
+            /> */}
           </div>
         </div>
       )}
