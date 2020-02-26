@@ -1,20 +1,23 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
-import Dropdown, { Option } from "react-dropdown";
-import { FullPageItemProps } from "../constants/full-page-item-prop-type";
+import { FullPageItemProps } from "../constants/fpi-utils";
 import { catalogue } from "../constants/content-catalogue";
+import { Option } from "react-dropdown";
 import "../scss/pages/full-page-item.scss";
 import "react-dropdown/style.css";
 import FullPageItem from "./full-page-item";
 
 const FullPageItemContainer = () => {
-  console.log('fire 1')
   const { itemId } = useParams();
-  console.log('fire 2')
-  const catalogueItem = catalogue[itemId]
-  console.log('fire 3')
-  console.log(catalogueItem)
+  const catalogueItem = catalogue[itemId];
+  const itemQualityArrayForDropdown: Option[] = [];
+
+  catalogueItem.itemQualityLevels.map((item, i) =>
+    itemQualityArrayForDropdown.push({
+      value: `${i}-${item.qualityLevel}`,
+      label: `${item.qualityLevel} : £${item.price}`
+    })
+  );
 
   const foundStockItem: FullPageItemProps = {
     id: catalogueItem.id,
@@ -24,10 +27,10 @@ const FullPageItemContainer = () => {
     contentTitle: catalogueItem.contentTitle,
     contentDescription: catalogueItem.contentDescription,
     contentPreviewUrl: catalogueItem.contentPreviewUrl,
-    // itemQualityLevels: catalogueItem.itemQualityLevels
+    itemPricingArray: itemQualityArrayForDropdown
   };
 
   return <FullPageItem {...foundStockItem} />;
 };
 
-export default FullPageItemContainer
+export default FullPageItemContainer;
