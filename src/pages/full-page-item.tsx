@@ -21,6 +21,7 @@ const FullPageItem = (props: FullPageItemProps) => {
     imageAltText,
     contentTitle,
     contentDescription,
+    contentTagline,
     contentPreviewUrl,
     itemPricingArray = []
   } = props
@@ -41,6 +42,7 @@ const FullPageItem = (props: FullPageItemProps) => {
           </div>
           <div className="full__page__desktop__col2 app-medium">
             <h1>{contentTitle.toUpperCase()}</h1>
+            <h5>{contentTagline}</h5>
             <span>{contentDescription.toLowerCase()}</span>
             <ul className="full__page__desktop__col2__price__container">
               <Dropdown

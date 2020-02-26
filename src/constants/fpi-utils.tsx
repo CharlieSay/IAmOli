@@ -8,5 +8,6 @@ export type FullPageItemProps = {
     contentTitle: string;
     contentDescription: string;
     contentPreviewUrl: string;
+    contentTagline: string;
     itemPricingArray: Option[];
   };

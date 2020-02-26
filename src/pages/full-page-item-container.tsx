@@ -6,18 +6,23 @@ import { Option } from "react-dropdown";
 import "../scss/pages/full-page-item.scss";
 import "react-dropdown/style.css";
 import FullPageItem from "./full-page-item";
+import { Redirect } from "react-router";
 
 const FullPageItemContainer = () => {
   const { itemId } = useParams();
   const catalogueItem = catalogue[itemId];
   const itemQualityArrayForDropdown: Option[] = [];
 
-  catalogueItem.itemQualityLevels.map((item, i) =>
-    itemQualityArrayForDropdown.push({
-      value: `${i}-${item.qualityLevel}`,
-      label: `${item.qualityLevel} : £${item.price}`
-    })
-  );
+  try {
+    catalogueItem.itemQualityLevels.map((item, i) =>
+      itemQualityArrayForDropdown.push({
+        value: `${i}-${item.qualityLevel}`,
+        label: `${item.qualityLevel} : £${item.price}`
+      })
+    );
+  } catch (error) {
+    return <Redirect to='/404'/>
+  }
 
   const foundStockItem: FullPageItemProps = {
     id: catalogueItem.id,
@@ -27,6 +32,7 @@ const FullPageItemContainer = () => {
     contentTitle: catalogueItem.contentTitle,
     contentDescription: catalogueItem.contentDescription,
     contentPreviewUrl: catalogueItem.contentPreviewUrl,
+    contentTagline: catalogueItem.contentTagline,
     itemPricingArray: itemQualityArrayForDropdown
   };
 
