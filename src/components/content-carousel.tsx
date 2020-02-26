@@ -1,61 +1,28 @@
-import ContentCard from "./content-card";
+import ContentCard, { ContentItemProp } from "./content-card";
 import { useMediaQuery } from "react-responsive";
 import React, { Fragment } from "react";
-
-import PackOne from "../assets/img/PACK1.png";
-import PackTwo from "../assets/img/PACK2.png";
-import PackThree from "../assets/img/FILm3.png";
-import PackFour from "../assets/img/PACK4.png";
-import PackFive from "../assets/img/PACK6.png";
+import {catalogue} from "../constants/content-catalogue"
 
 import "../scss/components/content-carousel.scss";
-
-const carouselDummyData = [
-  {
-    imageSrc: PackOne,
-    imageAltText: "f_g_1",
-    imageDescription: "string",
-    contentTitle: "Wonder Loops",
-    contentDescription: "Hillsong United - Wonder",
-    offsiteUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY"
-  },
-  {
-    imageSrc: PackTwo,
-    imageAltText: "f_g_2",
-    imageDescription: "string",
-    contentTitle: "Awake My Soul",
-    contentDescription: "Hillsong - Awake My Soul",
-    offsiteUrl: "https://www.youtube.com/watch?v=TKs2O8l23Cg"
-  },
-  {
-    imageSrc: PackThree,
-    imageAltText: "f_g_3",
-    imageDescription: "string",
-    contentTitle: "VJ Loops 1",
-    contentDescription: "Start of VJ Loops",
-    offsiteUrl: "https://www.audaciouschurch.com"
-  },
-  {
-    imageSrc: PackFour,
-    imageAltText: "f_g_4",
-    imageDescription: "string",
-    contentTitle: "VJ Loops 2",
-    contentDescription: "MORE VJ LOOPS",
-    offsiteUrl: "https://www.audaciouschurch.com"
-  },
-  {
-    imageSrc: PackFive,
-    imageAltText: "f_g_5",
-    imageDescription: "string",
-    contentTitle: "Film Grain 50mm",
-    contentDescription: "Edgy Loopz",
-    offsiteUrl: "https://www.audaciouschurch.com"
-  }
-];
 
 const ContentCarousel = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
+
+  const carouselDummyData : ContentItemProp[] = []
+
+  catalogue.map((item) => (
+    carouselDummyData.push(
+        {
+          id: item.id,
+          imageSrc: item.imageSrcHomepage ,
+          imageAltText: item.imageAltText,
+          contentTitle: item.contentTitle,
+          contentTagline: item.contentTagline,
+          offsiteUrl: item.contentPreviewUrl
+        }
+      )
+  ))
 
   return (
     <Fragment>

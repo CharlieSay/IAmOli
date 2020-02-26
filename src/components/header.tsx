@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <header className="header__parent app">
-      {isWideDesktop && (
+     {isWideDesktop && (
         <div className="header__row">
           <section>
             <ul className="app-medium header__item header__item__navigation">

@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import "../scss/components/content-card.scss";
-import { Redirect } from "react-router";
 
 const ContentCard = (props: ContentItemProp) => {
   const {
@@ -11,7 +10,7 @@ const ContentCard = (props: ContentItemProp) => {
     imageAltText,
     imageDescription,
     contentTitle,
-    contentDescription,
+    contentTagline,
     offsiteUrl
   } = props;
 
@@ -32,14 +31,14 @@ const ContentCard = (props: ContentItemProp) => {
               <div className="content__card__information">
                 <h3>{contentTitle.toUpperCase()}</h3>
                 <span className="app-medium">
-                  {contentDescription?.toLowerCase()}
+                  {contentTagline.toLowerCase()}
                 </span>
               </div>
             )}
           </div>
         </a>
         <a href={`item/${id}`}>
-        <button>See More</button>
+          <button>See More</button>
         </a>
       </div>
     </Fragment>
@@ -52,7 +51,7 @@ export type ContentItemProp = {
   imageAltText?: string;
   imageDescription?: string;
   contentTitle: string;
-  contentDescription?: string;
+  contentTagline: string;
   offsiteUrl: string;
 };
 

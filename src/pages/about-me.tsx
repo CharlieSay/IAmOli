@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <Fragment>
       <div className="about__me">
-        <img className="about__me__profile" src={ProfilePicture} width="250" height="250"></img>
+        <img className="about__me__profile" src={ProfilePicture} width="250" height="250" alt="oliver"></img>
         <h1>Hi, I Am Oli.</h1>
         <h3>UK film industry, Data Wrangler</h3>
         <span>VFX assistant data wrangler </span>
