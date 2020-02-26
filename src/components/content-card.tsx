@@ -4,14 +4,9 @@ import { useMediaQuery } from "react-responsive";
 import "../scss/components/content-card.scss";
 import { Redirect } from "react-router";
 
-const ConsoleLogMe = () => {
-   return (
-     <Redirect to={"/about-me"}/>
-   )
-}
-
 const ContentCard = (props: ContentItemProp) => {
   const {
+    id,
     imageSrc,
     imageAltText,
     imageDescription,
@@ -43,13 +38,16 @@ const ContentCard = (props: ContentItemProp) => {
             )}
           </div>
         </a>
-        <button onClick={ConsoleLogMe} >See More</button>
+        <a href={`item/${id}`}>
+        <button>See More</button>
+        </a>
       </div>
     </Fragment>
   );
 };
 
 export type ContentItemProp = {
+  id: number,
   imageSrc?: any;
   imageAltText?: string;
   imageDescription?: string;

@@ -65,7 +65,7 @@ const ContentCarousel = () => {
             <ul className="carousel__results__list">
               {carouselDummyData.map((carouselData, i) => (
                   <li key={`content-id-${i}`} className="carousel-card">
-                    <ContentCard {...carouselData} />
+                    <ContentCard {...carouselData} id={i} />
                   </li>
               ))}
             </ul>
@@ -75,7 +75,7 @@ const ContentCarousel = () => {
           <div className="carousel__container">
             {carouselDummyData.map((carouselData, i) => (
               <div id={`content-id-${i}`}>
-                <ContentCard {...carouselData} />
+                <ContentCard {...carouselData} id={i}  />
               </div>
             ))}
           </div>
