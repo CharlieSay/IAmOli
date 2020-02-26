@@ -27,14 +27,14 @@ const ContentCard = (props: ContentItemProp) => {
                 <span>{imageDescription}</span>}
               </div>
             )}
-            {isDesktop && (
-              <div className="content__card__information">
-                <h3>{contentTitle.toUpperCase()}</h3>
+            <div className="content__card__information">
+              <h3>{contentTitle.toUpperCase()}</h3>
+              {isDesktop && (
                 <span className="app-medium">
                   {contentTagline.toLowerCase()}
                 </span>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </a>
         <a href={`item/${id}`}>
@@ -46,7 +46,7 @@ const ContentCard = (props: ContentItemProp) => {
 };
 
 export type ContentItemProp = {
-  id: number,
+  id: number;
   imageSrc?: any;
   imageAltText?: string;
   imageDescription?: string;

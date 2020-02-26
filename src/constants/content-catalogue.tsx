@@ -1,7 +1,7 @@
 export const catalogue = [
   {
     id: 0,
-    pageTitle: "Item Example | I Am Oli",
+    pageTitle: "Item Example 3 | I Am Oli",
     imageSrc: "https://cdn.shopify.com/s/files/1/0071/2923/5525/products/Sequence_01.00_00_00_10.Still001_550x825.jpg?v=1578283501",
     imageSrcHomepage: "https://i.imgur.com/ogLMF2T.png",
     imageAltText: "Item Example Alternative Text",

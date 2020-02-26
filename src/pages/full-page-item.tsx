@@ -13,7 +13,7 @@ const HandleDropDownSelection = (selection: Option) => {
 const FullPageItem = (props: FullPageItemProps) => {
   const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
-
+  
   const {
     id,
     pageTitle,
@@ -23,7 +23,9 @@ const FullPageItem = (props: FullPageItemProps) => {
     contentDescription,
     contentPreviewUrl,
     itemPricingArray = []
-  } = props;
+  } = props
+
+  document.title = pageTitle
 
   return (
     <div className="full__page">
@@ -38,8 +40,8 @@ const FullPageItem = (props: FullPageItemProps) => {
             </div>
           </div>
           <div className="full__page__desktop__col2 app-medium">
-            <h1>{contentTitle?.toUpperCase()}</h1>
-            <span>{contentDescription?.toLowerCase()}</span>
+            <h1>{contentTitle.toUpperCase()}</h1>
+            <span>{contentDescription.toLowerCase()}</span>
             <ul className="full__page__desktop__col2__price__container">
               <Dropdown
                 options={itemPricingArray}
@@ -57,9 +59,9 @@ const FullPageItem = (props: FullPageItemProps) => {
             className="full__page__mobile__image"
             alt={imageAltText}
           ></img>
-          <h3>{contentTitle?.toUpperCase()}</h3>
+          <h3>{contentTitle.toUpperCase()}</h3>
           <span className="app__medium">
-            {contentDescription?.toLowerCase()}
+            {contentDescription.toLowerCase()}
           </span>
           <div className="o-page-spacer">
             <Dropdown
