@@ -31,7 +31,7 @@ const FullPageItem = (props: FullPageItemProps) => {
     contentTitle,
     contentDescription,
     contentPreviewUrl,
-    itemQualityLevels
+    itemQualityLevels = []
   } = props;
 
   const itemQualityArray: Option[] = [];
