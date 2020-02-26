@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Dropdown, { Option } from "react-dropdown";
-import { FullPageItemProps } from "../constants/full-page-item-prop-type";
+import { FullPageItemProps } from "../constants/fpi-utils";
 import "../scss/pages/full-page-item.scss";
 import "react-dropdown/style.css";
 
@@ -22,20 +22,9 @@ const FullPageItem = (props: FullPageItemProps) => {
     contentTitle,
     contentDescription,
     contentPreviewUrl,
-    itemQualityLevels = []
+    itemPricingArray = []
   } = props;
 
-  // const itemQualityArray: Option[] = [];
-
-  // itemQualityLevels.map((itemPriceQuality, i) =>
-  //   itemQualityArray.push({
-  //     value: `${i}-${itemPriceQuality.qualityLevel}`,
-  //     label: `${itemPriceQuality.qualityLevel} : £${itemPriceQuality.price}`
-  //   })
-  // );
-
-  console.log(props)
-  
   return (
     <div className="full__page">
       {isDesktop && (
@@ -52,11 +41,11 @@ const FullPageItem = (props: FullPageItemProps) => {
             <h1>{contentTitle?.toUpperCase()}</h1>
             <span>{contentDescription?.toLowerCase()}</span>
             <ul className="full__page__desktop__col2__price__container">
-              {/* <Dropdown
-                options={itemQualityArray}
+              <Dropdown
+                options={itemPricingArray}
                 onChange={HandleDropDownSelection}
                 placeholder="Content Prices"
-              /> */}
+              />
             </ul>
           </div>
         </div>
@@ -73,11 +62,11 @@ const FullPageItem = (props: FullPageItemProps) => {
             {contentDescription?.toLowerCase()}
           </span>
           <div className="o-page-spacer">
-            {/* <Dropdown
-              options={itemQualityArray}
+            <Dropdown
+              options={itemPricingArray}
               onChange={HandleDropDownSelection}
               placeholder="Content Prices"
-            /> */}
+            />
           </div>
         </div>
       )}

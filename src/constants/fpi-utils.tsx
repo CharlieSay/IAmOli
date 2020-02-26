@@ -1,4 +1,4 @@
-import { QualityLevelWithPrice } from "./quality-level";
+import { Option } from "react-dropdown";
 
 export type FullPageItemProps = {
     id?: number;
@@ -8,5 +8,5 @@ export type FullPageItemProps = {
     contentTitle?: string;
     contentDescription?: string;
     contentPreviewUrl?: string;
-    itemQualityLevels?: QualityLevelWithPrice[];
+    itemPricingArray?: Option[];
   };

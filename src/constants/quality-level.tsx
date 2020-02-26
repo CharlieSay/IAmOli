@@ -5,6 +5,6 @@ export enum QualityLevel {
 }
 
 export type QualityLevelWithPrice = {
-    qualityLevel: QualityLevel;
+    qualityLevel: string;
     price: string;
 }
