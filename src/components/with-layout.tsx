@@ -10,6 +10,8 @@ export const withLayout = <P extends object>(
   const WithLayout = (props: P) => {
     const isMobile = useMediaQuery({ query: "(max-width: 459px)" });
     const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
+
+    const footerClassName = `footer-padding-${isMobile?'mobile':'desktop'}`
     return (
       <Fragment>
         {Header && (
@@ -30,7 +32,7 @@ export const withLayout = <P extends object>(
           <ContentComponent {...props} />
         </main>
         {Footer && (
-          <div className="content-padding">
+          <div className={footerClassName}>
             <Footer />
           </div>
         )}

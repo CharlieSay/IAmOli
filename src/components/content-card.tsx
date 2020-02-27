@@ -16,6 +16,8 @@ const ContentCard = (props: ContentItemProp) => {
 
   const isDesktop = useMediaQuery({ query: "(min-device-width: 460px)" });
 
+  const classNameDecider = isDesktop ? "__desktop" : "__mobile";
+
   return (
     <Fragment>
       <div className="content__card">
@@ -27,7 +29,7 @@ const ContentCard = (props: ContentItemProp) => {
                 <span>{imageDescription}</span>}
               </div>
             )}
-            <div className="content__card__information">
+            <div className={"content__card__information" + classNameDecider}>
               <h3>{contentTitle.toUpperCase()}</h3>
               {isDesktop && (
                 <span className="app-medium">

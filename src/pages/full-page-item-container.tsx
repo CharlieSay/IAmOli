@@ -17,7 +17,7 @@ const FullPageItemContainer = () => {
     catalogueItem.itemQualityLevels.map((item, i) =>
       itemQualityArrayForDropdown.push({
         value: `${i}-${item.qualityLevel}`,
-        label: `${item.qualityLevel} : £${item.price}`
+        label: `${item.qualityLevel} : £${item.price} (${item.size})`
       })
     );
   } catch (error) {

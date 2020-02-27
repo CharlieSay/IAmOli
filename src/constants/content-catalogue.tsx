@@ -12,12 +12,14 @@ export const catalogue = [
     contentPreviewUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
     itemQualityLevels: [
       {
-        qualityLevel: "FourK",
-        price: "123"
+        qualityLevel: "4K",
+        price: "123",
+        size: "1.5GB"
       },
       {
-        qualityLevel: "TenEighty",
-        price: "90"
+        qualityLevel: "1080",
+        price: "90",
+        size: "0.7GB"
       }
     ]
   },
@@ -34,12 +36,14 @@ export const catalogue = [
     contentPreviewUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
     itemQualityLevels: [
       {
-        qualityLevel: "FourK",
-        price: "123"
+        qualityLevel: "4K",
+        price: "75",
+        size: "0.9GB"
       },
       {
-        qualityLevel: "TenEighty",
-        price: "90"
+        qualityLevel: "1080",
+        price: "50",
+        size: "0.24GB"
       }
     ]
   },
@@ -56,12 +60,14 @@ export const catalogue = [
     contentPreviewUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
     itemQualityLevels: [
       {
-        qualityLevel: "FourK",
-        price: "123"
+        qualityLevel: "4K",
+        price: "75",
+        size: "0.9GB"
       },
       {
-        qualityLevel: "TenEighty",
-        price: "90"
+        qualityLevel: "1080",
+        price: "50",
+        size: "0.24GB"
       }
     ]
   },
@@ -78,12 +84,14 @@ export const catalogue = [
     contentPreviewUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
     itemQualityLevels: [
       {
-        qualityLevel: "FourK",
-        price: "123"
+        qualityLevel: "4K",
+        price: "75",
+        size: "0.9GB"
       },
       {
-        qualityLevel: "TenEighty",
-        price: "90"
+        qualityLevel: "1080",
+        price: "50",
+        size: "0.24GB"
       }
     ]
   },
@@ -100,12 +108,14 @@ export const catalogue = [
     contentPreviewUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
     itemQualityLevels: [
       {
-        qualityLevel: "FourK",
-        price: "123"
+        qualityLevel: "4K",
+        price: "75",
+        size: "0.9GB"
       },
       {
-        qualityLevel: "TenEighty",
-        price: "90"
+        qualityLevel: "1080",
+        price: "50",
+        size: "0.24GB"
       }
     ]
   }
