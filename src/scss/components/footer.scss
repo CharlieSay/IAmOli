@@ -42,3 +42,20 @@
       white-space: nowrap;
     }
 }
+
+.footer__mobile{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3f3f4;
+  text-align: center;
+  height: 30px;
+
+  &__mobile__nav{
+    font-size: 9px;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
