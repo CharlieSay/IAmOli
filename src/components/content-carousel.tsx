@@ -41,7 +41,7 @@ const ContentCarousel = () => {
         {isDesktop && (
           <div className="carousel__container">
             {carouselDummyData.map((carouselData, i) => (
-              <div id={`content-id-${i}`}>
+              <div key={`content-id-${i}`}>
                 <ContentCard {...carouselData} id={i}  />
               </div>
             ))}

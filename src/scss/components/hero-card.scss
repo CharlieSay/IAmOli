@@ -15,10 +15,16 @@
         background: red;
     }
 
-    img{
+    &__img__desktop{
         flex-grow:1;
         width: 1225px;
         height: 320px;
+    }
+
+    &__img__mobile{
+        flex-grow:1;
+        width: 250px;
+        height: 250px;
     }
 
     span{

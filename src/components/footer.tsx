@@ -46,7 +46,6 @@ export const Footer = () => {
         <div className="footer__mobile__mobile__nav">
         <a href="/"><span>STORE</span></a>
         <a href="/blog"><span>BLOG</span></a>
-        <a href="/"><span>HOMEPAGE</span></a>
         <a href="/about"><span>ABOUT</span></a>
         <a href="/portfolio"><span>PORTFOLIO</span></a>
         </div>

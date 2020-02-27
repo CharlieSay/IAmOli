@@ -18,11 +18,10 @@ const HomePage = () => {
             <section className="top__spot__hero">
               <HeroCard
                 {...{
-                  imageSrc:
-                    "https://images.unsplash.com/photo-1424819827928-55f0c8497861?fit=crop&w=600&h=600%27",
+                  imageSrc: "https://i.imgur.com/kwuQWdc.png",
                   contentTitle: "Wonder Loops",
-                  offsiteUrl:
-                    "https://www.virginmedia.com/mobile/pay-monthly/apple/iphone-11?colour=Black&storage=128&contractDuration=36&tariffID=1009710960&tab=plan"
+                  offsiteUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
+                  isMobile: false
                 }}
               />
             </section>
@@ -35,8 +34,18 @@ const HomePage = () => {
       )}
       {isMobile && (
         <section className="app-medium top__spot__text">
+      <section className="top__spot__hero">
+              <HeroCard
+                {...{
+                  imageSrc: "https://i.imgur.com/sxjDQI4.png",
+                  contentTitle: "Wonder Loops",
+                  offsiteUrl: "https://www.youtube.com/watch?v=t6S0U0dxcBY",
+                  isMobile: true
+                }}
+              />
+            </section>
           <h4> RECENT CONTENT </h4>
-        <ContentCarousel />
+          <ContentCarousel />
         </section>
       )}
     </Fragment>
